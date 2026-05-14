@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usina Verde — Fábrica de Cana de Açúcar</title>
+  <meta name="description" content="Usina Verde — Produção sustentável de açúcar e bioenergia. Conheça nosso processo, serviços e compromisso ambiental.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --brand: #0f766e; /* teal-700 */
+      --accent: #f59e0b; /* amber-500 */
+    }
+    .glass {
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(6px);
+    }
+    /* Simple focus-visible for accessibility */
+    .focus-outline:focus{outline:3px solid rgba(15,118,110,0.2);outline-offset:3px}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-gradient-to-b from-emerald-50 to-white">
+  <!-- Navbar -->
+  <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-md bg-gradient-to-br from-emerald-600 to-teal-500 flex items-center justify-center text-white font-bold">UG</div>
+      <div>
+        <h1 class="text-lg font-semibold">Usina Verde</h1>
+        <p class="text-xs text-slate-500 -mt-1">Produção sustentável de cana</p>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+      <a href="#sobre" class="hover:text-emerald-700">Sobre</a>
+      <a href="#processo" class="hover:text-emerald-700">Processo</a>
+      <a href="#sustentabilidade" class="hover:text-emerald-700">Sustentabilidade</a>
+      <a href="#contato" class="px-4 py-2 bg-amber-400 text-white rounded-md shadow-sm hover:brightness-95">Contato</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden p-2 rounded-md focus-outline bg-white shadow-sm">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <main class="max-w-7xl mx-auto px-6">
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <p class="text-sm font-medium text-emerald-700 mb-3">Fabricação · Energia · Sustentabilidade</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Transformando cana em energia e valor para o futuro</h2>
+        <p class="mt-6 text-slate-600 max-w-xl">Na Usina Verde, combinamos tecnologia de ponta com práticas regenerativas para produzir açúcar, etanol e bioenergia com responsabilidade ambiental.</p>
+        <div class="mt-8 flex gap-4">
+          <a href="#sobre" class="inline-flex items-center gap-3 px-5 py-3 bg-emerald-600 text-white rounded-lg shadow hover:scale-[1.01] transition">Saiba mais</a>
+          <a href="#contato" class="inline-flex items-center gap-3 px-5 py-3 border border-emerald-200 rounded-lg text-emerald-700 hover:bg-emerald-50">Solicitar visita</a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-3 gap-4 max-w-xl">
+          <div class="glass p-4 rounded-lg text-center">
+            <div class="text-2xl font-bold text-emerald-700" data-target="120">0</div>
+            <div class="text-xs text-slate-600">Anos de experiência</div>
+          </div>
+          <div class="glass p-4 rounded-lg text-center">
+            <div class="text-2xl font-bold text-emerald-700" data-target="200">0</div>
+            <div class="text-xs text-slate-600">Milhões de toneladas processadas</div>
+          </div>
+          <div class="glass p-4 rounded-lg text-center">
+            <div class="text-2xl font-bold text-emerald-700" data-target="85">0%</div>
+            <div class="text-xs text-slate-600">Resíduos reaproveitados</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b8b5a7e2b3b9b5f6b1b9a0b9e8b3a9c" alt="campo de cana" class="w-full h-[420px] object-cover">
+          <div class="absolute bottom-6 left-6 glass p-4 rounded-lg">
+            <h3 class="font-semibold">Energia renovável</h3>
+            <p class="text-sm text-slate-600">Geração de bioenergia a partir de bagaço e vinhaça.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="sobre" class="py-12">
+      <div class="text-center max-w-3xl mx-auto">
+        <h3 class="text-2xl font-bold">O que fazemos</h3>
+        <p class="mt-3 text-slate-600">Soluções integradas: produção de açúcar, etanol, cogeração de energia e manejo sustentável das terras.</p>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="p-6 bg-white rounded-xl shadow-sm">
+          <div class="text-3xl mb-3">🌱</div>
+          <h4 class="font-semibold">Agricultura regenerativa</h4>
+          <p class="mt-2 text-slate-600 text-sm">Técnicas de cultivo que preservam o solo e promovem biodiversidade.</p>
+        </article>
+
+        <article class="p-6 bg-white rounded-xl shadow-sm">
+          <div class="text-3xl mb-3">⚙️</div>
+          <h4 class="font-semibold">Processamento eficiente</h4>
+          <p class="mt-2 text-slate-600 text-sm">Linhas modernas com baixo consumo de água e energia.</p>
+        </article>
+
+        <article class="p-6 bg-white rounded-xl shadow-sm">
+          <div class="text-3xl mb-3">🔋</div>
+          <h4 class="font-semibold">Geração de energia</h4>
+          <p class="mt-2 text-slate-600 text-sm">Cogeração e produção de etanol como alternativa energética limpa.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Process / Timeline -->
+    <section id="processo" class="py-12">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-2xl font-bold text-center">Nosso processo</h3>
+        <ol class="mt-8 space-y-6">
+          <li class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold">1</div>
+            <div>
+              <h4 class="font-semibold">Colheita inteligente</h4>
+              <p class="text-sm text-slate-600">Colheita com maquinário de precisão para reduzir perdas e manter qualidade.</p>
+            </div>
+          </li>
+
+          <li class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold">2</div>
+            <div>
+              <h4 class="font-semibold">Transporte e recebimento</h4>
+              <p class="text-sm text-slate-600">Logística dedicada e monitorada para garantir rastreabilidade.</p>
+            </div>
+          </li>
+
+          <li class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold">3</div>
+            <div>
+              <h4 class="font-semibold">Processamento</h4>
+              <p class="text-sm text-slate-600">Extração e produção com máximo aproveitamento energético.</p>
+            </div>
+          </li>
+
+          <li class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold">4</div>
+            <div>
+              <h4 class="font-semibold">Valorização de resíduos</h4>
+              <p class="text-sm text-slate-600">Bagaço e vinhaça transformados em energia e fertilizantes.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section id="sustentabilidade" class="py-12 bg-gradient-to-r from-emerald-50 to-white rounded-xl p-8">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold">Compromisso ambiental</h3>
+          <p class="mt-3 text-slate-600">Reduzimos emissões, conservamos água e investimos em projetos de recuperação de áreas degradadas.</p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+            <li>• Redução de CO₂ com cogeração eficiente</li>
+            <li>• Programas de conservação de solo e água</li>
+            <li>• Apoio à comunidade e economia local</li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div class="p-6 bg-white rounded-lg shadow-sm">
+            <div class="text-3xl font-bold text-emerald-700">95%</div>
+            <div class="text-xs text-slate-600">Aproveitamento energético</div>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-sm">
+            <div class="text-3xl font-bold text-emerald-700">40%</div>
+            <div class="text-xs text-slate-600">Menos consumo de água (desde 2015)</div>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-sm">
+            <div class="text-3xl font-bold text-emerald-700">300+</div>
+            <div class="text-xs text-slate-600">Hectares recuperados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <section id="contato" class="py-12">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-start">
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold">Fale conosco</h3>
+          <p class="text-slate-600">Solicite uma visita técnica, orçamento ou mais informações sobre nossos projetos.</p>
+          <div class="text-sm text-slate-700">
+            <p><strong>Telefone:</strong> (11) 4000-0000</p>
+            <p><strong>Email:</strong> contato@usinaverde.com</p>
+            <p class="mt-2 text-xs text-slate-500">Atendimento de segunda a sexta, das 8h às 17h</p>
+          </div>
+        </div>
+
+        <form class="bg-white p-6 rounded-lg shadow-sm space-y-4" onsubmit="handleSubmit(event)">
+          <div>
+            <label class="text-sm font-medium">Nome</label>
+            <input required class="mt-1 w-full border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-emerald-200" placeholder="Seu nome">
+          </div>
+          <div>
+            <label class="text-sm font-medium">Empresa</label>
+            <input class="mt-1 w-full border rounded-md p-2" placeholder="Empresa (opcional)">
+          </div>
+          <div>
+            <label class="text-sm font-medium">Mensagem</label>
+            <textarea required class="mt-1 w-full border rounded-md p-2" rows="4" placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button type="submit" class="px-4 py-2 bg-emerald-600 text-white rounded-md">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-8 text-sm text-slate-500 text-center">© <span id="year"></span> Usina Verde — Todos os direitos reservados</footer>
+  </main>
+
+  <script>
+    // Mobile menu (simple toggle)
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn?.addEventListener('click',()=>{alert('Menu mobile: implemente navegação conforme necessário.');});
+
+    // Simple counter animation
+    const counters = document.querySelectorAll('[data-target]');
+    counters.forEach(el=>{
+      const target = +el.getAttribute('data-target');
+      let start = 0;
+      const increment = Math.ceil(target/120);
+      const format = el.textContent && el.textContent.trim().endsWith('%') ? '%':'');
+      const update = ()=>{
+        start += increment;
+        if(start>=target) { el.textContent = target + (format?format:''); return; }
+        el.textContent = start + (format?format:'');
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    });
+
+    // Fix year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Handle contact submit (demo)
+    function handleSubmit(e){
+      e.preventDefault();
+      alert('Mensagem enviada! Entraremos em contato em breve.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
